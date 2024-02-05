@@ -249,19 +249,52 @@ footer {
 
     p,
     ul,
-    li {font-size: 14px;}
-
-    h1 {font-size: 40px;}
-
-    h2 {font-size: 14px;}
-/*Content*/
-    .hero{
-        background-image: url(../Images/Mobile\ Hero\ Image.png);
+    li {
+        font-size: 14px;
     }
-    .skills-content{
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+    /*navigation*/
+    .navigation{
+        height:45px;
+    }
+    .nav-bar{
+        column-gap:27px;
+    }
+    /*Content*/
+    .hero {
+        background-image: url(../Images/Mobile\ Hero\ Image.png);
+        height: 469px;
+    }
+    #splash{
+        height: 229px;
+        width:240px;
+    }
+
+    .skills {
+        height: 459px;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .skills-content {
         flex-direction: column;
     }
-    .work-item{
+
+    .work {
+        height:1228px;
+    }
+
+    .work-contents{
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .work-item {
         grid-template-rows: 1fr 1fr;
         row-gap: 20px;
     }
