@@ -1,0 +1,137 @@
+/*typography*/
+
+p,ul,li {
+    font-family: "Junge";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navi {
+    font-family: "Inria Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: "Julius Sans One";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    font-family: "Inria Serif";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/*navigation*/
+.navigation {
+    background: #183650;
+    position: fixed;
+    top: 0;
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 99px;
+    width: 73%;
+    color: white;
+}
+
+/*Hero*/
+.hero{
+    width:100%;
+    background-image: url(../Images/Hero-Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1024px;
+    position: absolute;
+    top: 0;
+}
+#splash{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top: 100px;
+    left: 110px;
+    color: white;
+    width: 400px;
+    height: 400px;
+}
+
+/*About me*/
+.about{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #183650;
+    position: absolute;
+    top:1024px
+}
+.about-contents{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+    
+
+/*skills*/
+.skills{
+    width: 100%;
+    height: 474px;
+    color: white;
+    background-color: #0A1426;
+    position: absolute;
+    top:1374px;
+    display:flex;
+    justify-content: center;
+    
+}
+.skills-content{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 53px;
+    align-content: center;
+}
+#key-skills{
+    display: grid
+    grid-template-rows: 1fr 4fr ;
+}
+#key-skills-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*Footer*/
+.footer {
+    width: 100%;
+    height: 433px;
+    background-image: url("../Images/Footer\ background.png");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 1848;
+    color: white;
+}
