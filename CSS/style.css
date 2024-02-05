@@ -1,6 +1,8 @@
 /*typography*/
 
-p,ul,li {
+p,
+ul,
+li {
     font-family: "Junge";
     font-size: 24px;
     font-style: normal;
@@ -33,10 +35,12 @@ h2 {
     line-height: normal;
     text-transform: uppercase;
 }
+
 /*body*/
-body{
+body {
     background-color: #0A1426;
 }
+
 /*navigation*/
 .navigation {
     background: #183650;
@@ -49,6 +53,7 @@ body{
     align-items: center;
     z-index: 1;
 }
+
 .nav-bar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -58,14 +63,15 @@ body{
 }
 
 /*Hero*/
-.hero{
-    width:100%;
+.hero {
+    width: 100%;
     background-image: url(../Images/Hero-Image.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 1024px;
 }
-#splash{
+
+#splash {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
     align-self: center;
@@ -79,7 +85,7 @@ body{
 }
 
 /*About me*/
-.about{
+.about {
     width: 100%;
     height: 350px;
     display: flex;
@@ -87,51 +93,56 @@ body{
     color: white;
     background-color: #183650;
 }
-.about-contents{
+
+.about-contents {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-    
+
 
 /*skills*/
-.skills{
+.skills {
     width: 100%;
     height: 474px;
     color: white;
     background-color: #0A1426;
-    display:flex;
+    display: flex;
     justify-content: center;
-    
+
 }
-.skills-content{
+
+.skills-content {
     width: 75%;
     display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 53px;
     align-content: center;
 }
-#key-skills{
-    display: grid
-    grid-template-rows: 1fr 4fr ;
+
+#key-skills {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
 }
-#key-skills-content{
+
+#key-skills-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 /*work intro*/
-.work-intro{
+.work-intro {
     width: 100%;
     height: 549px;
     background-image: url(../Images/Divider\ Down.png);
     background-repeat: no-repeat;
     background-size: cover;
-    color:white;
+    color: white;
     display: flex;
 }
-.work-intro-contents{
+
+.work-intro-contents {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -140,57 +151,64 @@ body{
 }
 
 /*work*/
-.work{
+.work {
     width: 100%;
     height: 1049px;
     color: white;
     background-color: #0A1426;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
-.work-contents{
+
+.work-contents {
     width: 75%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 105px;
     align-content: center;
 }
-.work-item{
+
+.work-item {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
 }
-.work-text{
+
+.work-text {
     text-align: center;
     position: relative;
     top: 15%;
     display: grid;
-    grid-template-rows: 1fr 2fr; 
+    grid-template-rows: 1fr 2fr;
 }
+
 /*let's connect*/
-.lets-connect{
+.lets-connect {
     width: 100%;
     height: 600px;
     background-image: url("../Images/Divider\ Up.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
-.lets-connect-content{
+
+.lets-connect-content {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     position: relative;
     top: 350px;
 }
-.lets-connect-grid{
+
+.lets-connect-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 110px;
 }
+
 /*Footer*/
 footer {
     width: 100%;
@@ -200,25 +218,51 @@ footer {
     background-size: cover;
     background-color: #183650;
     color: white;
-    display:flex;
+    display: flex;
     justify-content: center;
-    
+
 }
-.footer-contents{
+
+.footer-contents {
     width: 75%;
     display: grid;
-    height:224px;
+    height: 224px;
     grid-template-columns: 1fr 1fr;
     position: relative;
     top: 170px;
 }
-.contact-info{
+
+.contact-info {
     display: flex;
     flex-direction: column;
     align-content: center;
 }
-.right{
+
+.right {
     display: flex;
     align-items: end;
     justify-self: end;
+}
+
+@media only screen and (max-width: 600px) {
+    /*typography*/
+
+    p,
+    ul,
+    li {font-size: 14px;}
+
+    h1 {font-size: 40px;}
+
+    h2 {font-size: 14px;}
+/*Content*/
+    .hero{
+        background-image: url(../Images/Mobile\ Hero\ Image.png);
+    }
+    .skills-content{
+        flex-direction: column;
+    }
+    .work-item{
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+    }
 }
